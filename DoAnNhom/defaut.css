@@ -1,0 +1,217 @@
+﻿body {
+    font-family: sans-serif;
+    color: black;
+}
+
+.container {
+    width: 1200px;
+    margin: 50px 150px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.abc {
+    height: 370px;
+    padding: 10px 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center !important;
+    margin: 10px 5px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+input {
+    border: none;
+    text-overflow: none;
+    outline: none;
+    background: transparent;
+    color: #FFF;
+}
+
+header ul li {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 30px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #bdc3c7;
+    transition: all .5s;
+}
+
+    header ul li:hover {
+        transform: scale(1, 1.2);
+        background: #7f8c8d;
+        color: red;
+    }
+
+    header ul li a {
+        color: darkolivegreen;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+.content-left {
+    width: 260px;
+    height: 332px;
+    float: left;
+    margin-top: 16px;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+    .content-left #DataList1 {
+        width: 260px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+.middle {
+    width: 930px;
+    float: right;
+    border: 1px;
+    padding-top: 16px;
+}
+
+    .middle .item {
+        border: 1px solid brown;
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 625px;
+        float: left;
+    }
+
+.login {
+    width: 250px;
+    height:330px;
+    float: right;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.box {
+    width: 260px;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+    .box h2 {
+        padding: 0;
+        color: black;
+        text-align: center;
+    }
+
+    .box .inputbox {
+        position: relative;
+    }
+
+        .box .inputbox input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 15px;
+            color: black !important;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            background: transparent;
+        }
+
+        .box .inputbox label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: black;
+            pointer-events: none;
+            transition: 0.5s ease;
+        }
+
+    .box:hover .inputbox > input {
+        color: black;
+    }
+
+    .box .inputbox input:focus ~ label,
+    .box .inputbox input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+    }
+
+.search {
+    display: inline-block;
+}
+
+.btn {
+    width: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #8e44ad;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    color: #d35400;
+    text-decoration: none;
+}
+
+.crl {
+    clear: both;
+}
+
+.about p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.about p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+    .about p a {
+        color: black;
+    }
+
+.about {
+    text-align: center;
+    transition: all .5s;
+    padding-bottom: 10px;
+}
+
+.content-left {
+    width: 250px;
+    height: 330px;
+    float: left;
+    margin-top: 16px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+    .content-left ul li {
+        margin-bottom: 10px;
+    }
+
+    .content-left #DataList1 {
+        width: 100%;
+    }

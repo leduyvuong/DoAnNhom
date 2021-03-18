@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DoAnNhom.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="csss/1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="container">
+        <header>
+            <ul>
+                <li><a href="home.aspx">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="login.aspx"</a>Login</li>
+                <li>
+                        <input type="text" width="50px" placeholder="Tap to search">
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="content-left">
+                
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" Text ='<%# Eval("TENLOAI") %>'
+                                    CommandArgument ='<%# Eval("MALOAI") %>' OnClick="LinkButton1_Click" >LinkButton </asp:LinkButton>
+                    </ItemTemplate>
+                </asp:DataList>
+                
+            </div>
+            <div class="middle">
+                <div class="iii">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="crl"></div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+     </form>
+</body>
+</html>

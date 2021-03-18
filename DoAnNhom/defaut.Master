@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="defaut.master.cs" Inherits="DoAnNhom.defaut" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="defaut.css" rel="stylesheet" />
+</head>
+<body>
+     <form id="form1" runat="server">
+     <div class="container">
+        <header>
+            <ul>
+                <li><a href="sanpham.aspx">Home</a></li>
+                <li><a href="sanpham.aspx">Product</a></li>
+                <li><a href="CONTACT.aspx">Contact</a></li>
+                <li ><a href="giohang.aspx">Basket</a></li>
+                
+                
+            </ul>
+        </header>
+        <div class="content">
+            <div class="content-left">
+                
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <asp:LinkButton Style="margin-top: 10px; text-align:center" ID="LinkButton1" runat="server" Text ='<%# Eval("TENLOAI") %>'
+                                    CommandArgument ='<%# Eval("MALOAI") %>' OnClick="LinkButton1_Click" >LinkButton </asp:LinkButton>
+                    </ItemTemplate>
+                </asp:DataList>
+                
+            </div>
+            <div class="middle">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+                
+                
+            </div>
+            <div class="crl" style="clear: both"></div>
+        </div>
+        <footer>
+            
+        </footer>
+    </div>
+     </form>
+</body>
+</html>
